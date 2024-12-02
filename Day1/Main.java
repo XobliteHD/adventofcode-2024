@@ -29,6 +29,12 @@ public class Main {
         array2.sort(null);
         
         int x=0;
+        for (int i=0 ; i<array1.size() ; i++)
+        {
+            x+=Math.abs(array1.get(i)-array2.get(i));
+        }
+        System.out.printf("Task 1: %d%n",x);
+        x=0;
         int y=0;
         for (int i=0 ; i<array1.size() ; i++)
         {
@@ -41,6 +47,6 @@ public class Main {
                 y=0;
             }
         }
-        System.out.printf("total distance is: %d%n",x);
+        System.out.printf("Task 2: %d%n",x);
     }
 }
