@@ -1,0 +1,266 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args)
+    {
+       Scanner in = new Scanner(System.in);
+       System.out.println("donner a: ");
+       int a = in.nextInt();
+       System.out.println("donner b: ");
+       int b = in.nextInt(); 
+       System.out.print(a+b);
+    }
+}
+---------------------------------------------------------------------------
+import java.util.Scanner;
+import java.math.*;
+public class Main{
+    public static void main(String[] args)
+    {
+       Scanner in = new Scanner(System.in);
+       System.out.println("donner le rayon: ");
+       double r = in.nextDouble();
+       double s=Math.PI*Math.pow(r, 2);
+       System.out.println(s);
+    }
+}
+---------------------------------------------------------------------------
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args)
+    {
+       Scanner in = new Scanner(System.in);
+       System.out.println("donner votre nom et prenom: ");
+       String nom = in.nextLine();
+       System.out.println("donner votre age: ");
+       int age = in.nextInt();
+       System.out.println("Salut "+nom+" ! en 2025 vous aurai "+(age+1)+" ans");
+    }
+}
+---------------------------------------------------------------------------
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args)
+    {
+       Scanner in = new Scanner(System.in);
+       System.out.println("donner n: ");
+       int n = in.nextInt();
+       int s=0;
+       for (int i=1 ; i<n+1 ; i++)
+       {
+        s+=i;
+       }
+       System.out.println(s);
+    }
+}
+---------------------------------------------------------------------------
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args)
+    {
+       Scanner in = new Scanner(System.in);
+       System.out.println("donner n: ");
+       int n = in.nextInt();
+       int s=1;
+       for (int i=1 ; i<n+1 ; i++)
+       {
+        s*=i;
+       }
+       System.out.println(s);
+    }
+}
+---------------------------------------------------------------------------
+import java.util.Scanner;
+import java.math.*;
+public class Main{
+    public static void main(String[] args)
+    {
+       Scanner in = new Scanner(System.in);
+       System.out.println("donner n: ");
+       int n = in.nextInt();
+       System.out.println("le carré de "+n+" est:"+(Math.pow(n, 2))+" et le cube de "+n+" est: "+(Math.pow(n, 3)));
+    }
+}
+---------------------------------------------------------------------------
+import java.util.Scanner;
+import java.util.Random;
+public class Main{
+    public static void main(String[] args)
+    {
+        Random ran = new Random();
+        int r=ran.nextInt(0,10);
+        Scanner in = new Scanner(System.in);
+        do{
+            System.out.println("donner n: ");
+            int n = in.nextInt();
+            if (n==r)
+            {
+                System.out.println("OUI");
+                break;
+            }else if (n > r){
+                System.out.println("smaller");
+            }else{
+                System.out.println("bigger");
+            }
+        }while(true);  
+    }
+}
+---------------------------------------------------------------------------
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args)
+    {
+        Scanner in = new Scanner(System.in);  
+        System.out.println("donner n: ");
+        int n = in.nextInt();
+        for (int i = 0; i<11; i++){
+            System.out.println(n+"*"+i+"="+(n*i));
+        }
+    }
+}
+---------------------------------------------------------------------------
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args)
+    {
+        Scanner in = new Scanner(System.in);  
+        System.out.println("donner votre age: ");
+        int n = in.nextInt();
+        if (n > 17){
+            System.out.println("Vous êtes majeur.");
+        }else{
+            System.out.println("Vous êtes mineur.");
+        }
+    }
+}
+---------------------------------------------------------------------------
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args)
+    {
+        Scanner in = new Scanner(System.in);  
+        System.out.println("donner votre age: ");
+        int n = in.nextInt();
+        if (n % 2 == 0){
+            System.out.println("pair");
+        }else{
+            System.out.println("impair");
+        }
+    }
+}
+---------------------------------------------------------------------------
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args)
+    {
+        for (int i =1 ; i<21 ; i++)
+            if(i%2==0)
+                System.out.println(i);
+    }
+}
+---------------------------------------------------------------------------
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args)
+    {
+        Scanner in = new Scanner(System.in);  
+        System.out.println("donner votre age: ");
+        int n = in.nextInt();
+        int s=0;
+        for (int i =1 ; i<n+1 ; i++){
+            s+=i;
+        }
+        System.out.println(s);
+    }
+}
+---------------------------------------------------------------------------
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args)
+    {
+        int i = 0;
+        while (i*3<31) {
+            System.out.println(i*3);
+            i++;
+        }
+    }
+}
+---------------------------------------------------------------------------
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args)
+    {
+        Scanner in = new Scanner(System.in);  
+        int m = 0;
+        while (true) {
+            System.out.println("donner n: ");
+            int n = in.nextInt();
+            if (m<n){
+                m=n;
+            }else if (n==0)
+                break;
+        }
+        System.out.println(m);
+    }
+}
+---------------------------------------------------------------------------
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args)
+    {
+        Scanner in = new Scanner(System.in);  
+        System.out.println("donner n: ");
+        int n = in.nextInt();
+        String nb = Integer.toString(n);
+        int i=0;
+        while (i < nb.length()) {
+            i++;
+        }
+        System.out.println(i);
+    }
+}
+---------------------------------------------------------------------------
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args)
+    {
+        Scanner in = new Scanner(System.in);  
+        System.out.println("donner n: ");
+        int n = in.nextInt();
+        int [] t = new int[n];
+        int s = 0;
+        for (int i =0; i<n; i++){
+            System.out.printf("donner t[%d]:%n",i+1);
+            t[i] = in.nextInt();
+            s+=t[i];
+        }
+        System.out.println(s);
+    }
+}
+---------------------------------------------------------------------------
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args)
+    {
+        Scanner in = new Scanner(System.in);  
+        System.out.println("donner n: ");
+        int n = in.nextInt();
+        int [] t = new int[n];
+        for (int i=0; i<n; i++){
+            System.out.printf("donner T[%d]:%n",i+1);
+            t[i] = in.nextInt();
+        }
+        int temp=0;
+        for (int i=0; i<(n/2); i++){
+            temp=t[i];
+            t[i]=t[n-i-1];
+            t[n-i-1]=temp;
+        }
+        for (int i=0; i<n; i++){
+            System.out.printf("T[%d]:%d%n",i+1,t[i]);
+        }
+    }
+}
+---------------------------------------------------------------------------
+---------------------------------------------------------------------------
+---------------------------------------------------------------------------
+---------------------------------------------------------------------------
